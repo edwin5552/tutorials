@@ -1,1 +1,1 @@
-# carousel-gallery
+# Carousel Gallery
