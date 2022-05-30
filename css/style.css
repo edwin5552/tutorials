@@ -1,3 +1,43 @@
 body {
 	font-family: 'Inter', sans-serif;
 }
+
+
+.gallery-panel .panel-media {
+	border-radius: 6px;
+}
+
+.gallery-panel .panel-media a {
+	display: block;
+}
+
+.gallery-panel .panel-media img {
+	border-radius: 6px;
+	display: block;
+}
+
+.gallery-carousel {}
+
+.gallery-carousel .owl-nav {
+	display: none;
+}
+
+.gallery-carousel .owl-dots {
+	background: #000000;
+
+	display: flex;
+	align-items: center;
+	padding: 10px 10px;
+}
+
+.gallery-carousel .owl-dots button.owl-dot {
+	background: #FFFFFF;
+	/* display: inline-block; */
+	/* width: 25; */
+	height: 6px;
+}
+
+.gallery-carousel .owl-dots button.owl-dot.active {
+	background: #2089bd;
+}
+
