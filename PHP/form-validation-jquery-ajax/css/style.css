@@ -1,0 +1,30 @@
+body {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+}
+.error input {
+	border-color: red;
+	border-width: 2px;
+}
+.success input {
+	border-color: green;
+	border-width: 2px;
+}
+.error span {
+	color: red;
+}
+.success span {
+	color: green;
+}
+span.error {
+	font-size: .875em;
+	margin-top: .25rem;
+	color: red;
+	display: block;
+	width: 100%;
+	line-height: 1.2;
+}
+i {
+	font-weight: 900;
+	font-family: 'Font Awesome 5 Free';
+}
