@@ -1,0 +1,53 @@
+body {}
+
+.mega-menu-container {
+	background: #E5E5E5;
+	padding: 40px 30px;
+}
+
+.mega-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 320px;
+	position: relative;
+}
+.mega-menu > .menu-item {
+	border: 1px solid #000000;
+	margin-bottom: 8px;
+}
+.mega-menu > .menu-item > a {
+	font-size: 20px;
+	font-weight: 700;
+	display: block;
+}
+
+.mega-menu > .menu-item > .submenu {
+	display: none;
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	top: 0;
+	left: 100%;
+}
+.mega-menu > .menu-item:hover > .submenu {
+	display: block;
+}
+.mega-menu > .menu-item > .submenu > .menu-item > .submenu {
+	display: none;
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	top: 0;
+	left: 100%;
+}
+.mega-menu > .menu-item > .submenu > .menu-item:hover > .submenu {
+	display: block;
+}
+.mega-menu > .menu-item > .submenu > .menu-item > .submenu > .menu-item {
+	border: 1px solid #000;
+}
