@@ -1,0 +1,42 @@
+<style>
+	.hc-nav-trigger {
+	  left: 20px;
+	}
+ 
+	.hc-nav-trigger span,
+	.hc-nav-trigger span::before,
+	.hc-nav-trigger span::after {
+	  background: #fff;
+	}
+ </style>
+ 
+ <div id="container">
+ 
+	<nav id="nav">
+	  <ul>
+		 <li>
+			<a href="#">Toàn quốc</a>
+			<ul data-bind="template: {name: 'page-template', data: {pages: pages}}"></ul>
+		 </li>
+	  </ul>
+	</nav>
+ 
+	<script type="text/html" id="page-template">
+	  <!-- ko foreach: pages -->
+	  <li>
+		 <a href="#" data-bind="click: $root.clicked">
+			<span data-bind="text: title"></span>
+		 </a>
+		 <!-- ko if: pages().length > 0 -->
+		 <ul data-bind="template: {name: 'page-template', data: {pages: pages}}"></ul>
+		 <!-- /ko -->
+	  </li>
+	  <!-- /ko -->
+	  <li><a href="#" data-bind="click: $root.createItem">New item</a></li>
+	</script>
+ 
+	<script>
+ 
+	</script>
+ 
+ </div>
