@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+   <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+      <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="css/slide-menu.css">
+   </head>
+   <body>
+      <div class="site-frame">
+
+         <!-- =====[HEADER]===== -->
+         <header id="header" class="site-header">
+				<button type="button" class="btn btn-primary btn-toggle-menu slide-menu__control" data-target="mobileMenu" data-action="toggle">
+					Menu
+				</button>
+         </header>
+
+         <!-- =====[MOBILE MENU]===== -->
+         <nav class="slide-menu" id="mobileMenu" >
+            <div class="controls">
+               <button type="button" class="btn slide-menu__control" data-action="back">Back</button>
+               <button type="button" class="btn slide-menu__control" data-action="close">Close</button>
+            </div>
+            <ul class="mobile-menu">
+               <li>
+                  <a href="#">Motors</a>
+                  <ul>
+                     <li>
+                        <a href="#">Used Cars for Sale</a>
+                        <ul>
+                           <li><a href="#">Acura</a></li>
+                           <li><a href="#">Alfa Romeo</a></li>
+                           <li><a href="#">Aston Martin</a></li>
+                           <li><a href="#">Audi</a></li>
+                           <li><a href="#">BAC</a></li>
+                           <li><a href="#">BAIC</a></li>
+                           <li><a href="#">BMW</a></li>
+                           <li><a href="#">BYD</a></li>
+                           <li><a href="#">Bentley</a></li>
+                           <li><a href="#">Bizzarrini</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Motorcycles</a></li>
+                     <li><a href="#">Auto Accessories</a></li>
+                     <li><a href="#">Heavy Vehicles</a></li>
+                     <li><a href="#">Boats</a></li>
+                     <li><a href="#">Number Plates</a></li>
+                     <li><a href="#">Export Cars</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Property for Rent</a>
+                  <ul>
+                     <li><a href="#">Apartment/Flat for Rent</a></li>
+                     <li><a href="#">Villa/House for Rent</a></li>
+                     <li><a href="#">Commercial for Rent</a></li>
+                     <li><a href="#">Rooms for rent </a></li>
+                     <li><a href="#">Townhouse</a></li>
+                     <li><a href="#">Penthouse</a></li>
+                     <li><a href="#">Residential Building</a></li>
+                     <li><a href="#">Villa Compound</a></li>
+                     <li><a href="#">Residential Floor</a></li>
+                     <li><a href="#">Residential Plot</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Property for Sale</a>
+                  <ul>
+                     <li><a href="#">Apartment/Flat</a></li>
+                     <li><a href="#">Villa/House</a></li>
+                     <li><a href="#">Commercial</a></li>
+                     <li><a href="#">Townhouse</a></li>
+                     <li><a href="#">Penthouse</a></li>
+                     <li><a href="#">Residential Building</a></li>
+                     <li><a href="#">Villa Compound</a></li>
+                     <li><a href="#">Residential Floor</a></li>
+                     <li><a href="#">Residential Plot</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Classifieds</a></li>
+               <li><a href="#">Mobiles & Tablets</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+
+
+
+       
+
+      </div>
+      <!-- SCRIPT FILES -->
+      <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/slide-menu.js"></script>
+      <!-- <script src="js/script.js"></script> -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuElement = document.getElementById('mobileMenu');
+				const menuLeft = new SlideMenu(menuElement, {
+					position: 'left',
+					submenuLinkAfter: '<i class="fa fa-caret-right"></i>',
+					backLinkBefore: '<i class="fa fa-caret-left"></i>',
+				});
+			});
+		</script>
+   </body>
+</html>
