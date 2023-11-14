@@ -1,0 +1,72 @@
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+.heading-font {
+	font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+.hc-offcanvas-nav {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+}
+
+.hc-offcanvas-nav .nav-container,
+.hc-offcanvas-nav .nav-wrapper,
+.hc-offcanvas-nav ul {
+	background: #FFFFFF;
+}
+
+.hc-offcanvas-nav .nav-close-button span::before, 
+.hc-offcanvas-nav .nav-close-button span::after {
+	/* content: ''; */
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	width: 12px;
+	height: 12px;
+	/* margin-top: -3px; */
+	border-top: 2px solid #000000;
+	border-left: 2px solid #000000;
+}
+
+.hc-offcanvas-nav .nav-item-link,
+.hc-offcanvas-nav li.nav-close a,
+.hc-offcanvas-nav .nav-back a {
+	padding: 12px 18px;
+	font-size: 16px;
+	color: #000000;
+	/* z-index: 1; */
+	/* background: rgba(0, 0, 0, 0); */
+	border-bottom: 1px solid #F5F5F5;
+	/* transition: background .1s ease; */
+}
+
+.hc-offcanvas-nav .nav-next span::before,
+.hc-offcanvas-nav .nav-back span::before {
+	/* content: ''; */
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	width: 9px;
+	height: 9px;
+	/* margin-left: -2px; */
+	/* box-sizing: border-box; */
+	border-top: 2px solid #C5C5C5;
+	border-left: 2px solid #C5C5C5;
+	/* transform-origin: center; */
+}
+
+.hc-offcanvas-nav .nav-wrapper > .nav-content > ul:first-of-type > li:first-child:not(.nav-back):not(.nav-close) > .nav-item-wrapper > .nav-item-link {
+	border-top: 1px solid #000000;
+}
+
+.hc-offcanvas-nav:not(.touch-device) li:not(.nav-item-custom) a:not([disabled]):hover {
+	background: #FFFFFF;
+	color: #dc3545;
+}
+
+.hc-offcanvas-nav .mobile-menu > li > .nav-item-wrapper > a {
+	font-weight: 400;
+}
