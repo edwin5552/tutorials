@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #E5E5E5;
+  background: #282828;
+}
+
+.hero {
+  width: 80%;
+  border: 1px solid #E5E5E5;
+  padding: 16px;
+  margin: 0 auto;
+}
+.hero p {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=main.css.map */
