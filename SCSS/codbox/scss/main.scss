@@ -1,9 +1,12 @@
 @import './resets';
 @import './variables';
+@import './mixins';
 
 
 
 body {
+	@include mp-0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: $text-color;
 	background: $body-color;
 }
@@ -17,4 +20,38 @@ body {
 	p {
 		margin-bottom: 16px;
 	}
+}
+
+.section {
+	border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: 1.0);
+	padding: 40px 0;
+
+	.container {
+		width: 76%;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-weight: 500;
+	}
+
+	&.section-1 {
+		h2 {
+			color: red;
+		}
+	}
+
+	&.section-2 {
+		h2 {
+			color: blue;
+		}
+	}
+
+	&.section-3 {
+		h2 {
+			color: green;
+		}
+	}
+
 }
