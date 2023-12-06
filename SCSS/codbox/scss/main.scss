@@ -55,3 +55,48 @@ body {
 	}
 
 }
+
+
+
+.lead {
+	&.xl {
+		p {
+			font-size: 20px;
+		}
+	}
+
+	&.lg {
+		p {
+			font-size: 18px;
+		}
+	}
+
+	&.md {
+		p {
+			font-size: 16px;
+		}
+	}
+
+	p {
+		font-weight: 300;
+	}
+}
+
+.big-stack {
+	background: $dark-pattern-1;
+	h2 {
+		font-size: 32px;
+		font-weight: 400;
+		margin: 0;
+	}
+	p {
+		font-size: 16px;
+		font-weight: 300;
+		color: $text-color;
+	}
+	&.md {
+		h2 {
+			font-size: 26px;
+		}
+	}
+}
