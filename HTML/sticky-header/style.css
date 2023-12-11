@@ -1,0 +1,20 @@
+
+
+
+.sticky-header-full {
+	position: sticky;
+	top: 0;
+}
+
+
+.section-hero {
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 90px);
+}
+
+.section-color {
+	height: 720px;
+	display: flex;
+	align-items: center;
+}
