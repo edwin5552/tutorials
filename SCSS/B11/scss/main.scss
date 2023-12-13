@@ -1,0 +1,95 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "mixin.scss";
+@import "framework.scss";
+
+
+body {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 400;
+	color: $color;
+	line-height: 1.4;
+}
+
+
+
+
+
+.brand {
+	a {
+		font-size: 20px;
+		font-weight: 700;
+		color: $color;
+		text-transform: uppercase;
+		display: inline-block;
+		letter-spacing: 1px
+	}
+}
+
+.menubar {}
+
+.menu {
+	@include list-unstyle;
+	display: flex;
+
+	.menu-item {
+		position: relative;
+		a {
+			display: block;
+			color: $color;
+			text-decoration: none;
+		}
+
+		.sub-menu {
+			@include list-unstyle;
+			background: #FFFFFF;
+			border: 1px solid #000;
+			border-radius: 4px;
+			padding: 8px 8px;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			// display: none;
+			.menu-item {
+				a {
+					padding: 8px 16px;
+					border-radius: 4px;
+				}
+				&:hover {
+					a {
+						color: #FFFFFF;
+						background: $primary-color;
+					}
+				}
+			}
+		}
+	}
+
+	>.menu-item {
+
+		>a {
+			font-weight: 500;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 4px;
+			letter-spacing: 1px;
+		}
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+
+		&:hover {
+			>a {
+				color: $primary-color;
+				background: #FFFFFF;
+			}
+		}
+
+	}
+
+
+
+}
