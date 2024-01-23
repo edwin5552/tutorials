@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+.container-alt {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+
+
+.grid-boxs {
+	background: #D5D5D5;
+	display: grid;
+	/* grid-column: 1; */
+	/* column-gap: 50px; */
+	row-gap: 20px;
+	
+}
+.grid-box {
+	border: 1px solid #000000;
+	padding: 20px 20px;
+	grid-row-start: 4;
+	grid-row-end: 1;
+}
