@@ -1,0 +1,8 @@
+:root {
+	--brand-color:#E0007A;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	color: #000000;
+	background: var(--brand-color);
+}
