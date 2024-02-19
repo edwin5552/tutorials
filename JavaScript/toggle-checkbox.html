@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .class1 {
+            color: red;
+        }
+        .class2 {
+            color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>Toggle between two classes on checkbox select</h2>
+
+<p id="myElement" class="class1">Hello World!</p>
+
+<input type="checkbox" id="myCheckbox"> Change Class
+
+<script>
+$(document).ready(function(){
+  $("#myCheckbox").change(function(){
+    if(this.checked) {
+      $("#myElement").removeClass("class1");
+      $("#myElement").addClass("class2");
+    } else {
+      $("#myElement").removeClass("class2");
+      $("#myElement").addClass("class1");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
