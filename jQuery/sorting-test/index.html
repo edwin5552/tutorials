@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorting Datas</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-5">
+					<div class="button-group text-center">
+						<button type="button" data-filter="*" class="btn btn-light">All</button>
+						<button type="button" data-filter=".data-primary" class="btn btn-primary">Primary</button>
+						<button type="button" data-filter=".data-success" class="btn btn-success">Success</button>
+						<button type="button" data-filter=".data-danger" class="btn btn-danger">Danger</button>
+						<button type="button" data-filter=".data-warning" class="btn btn-warning">Warning</button>
+						<button type="button" data-filter=".data-info" class="btn btn-info">Info</button>
+						<button type="button" data-filter=".data-secondary" class="btn btn-secondary">Secondary</button>
+						<button type="button" data-filter=".data-dark" class="btn btn-dark">Dark</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row row-datas g-4">
+
+				<div class="col-lg-3 mix data-primary"><div class="p-4 bg-primary">Primary 1</div></div>
+				<div class="col-lg-3 mix data-warning"><div class="p-4 bg-warning">Warning 1</div></div>
+				<div class="col-lg-3 mix data-danger"><div class="p-4 bg-danger">Danger 1</div></div>
+				<div class="col-lg-3 mix data-dark"><div class="p-4 bg-dark">Dark 1</div></div>
+
+
+				<div class="col-lg-3 mix data-success"><div class="p-4 bg-success">success 1</div></div>
+				<div class="col-lg-3 mix data-info"><div class="p-4 bg-info">info 1</div></div>
+				<div class="col-lg-3 mix data-secondary"><div class="p-4 bg-secondary">secondary 1</div></div>
+				<div class="col-lg-3 mix data-danger"><div class="p-4 bg-danger">danger 2</div></div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+
+	
+
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			console.log('jQuery');
+			var mixer = mixitup('.row-datas');
+		});
+	</script>
+</body>
+</html>
