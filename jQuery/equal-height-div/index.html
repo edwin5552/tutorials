@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Equal Height DIV</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="site-page">
+
+		<section class="py-5 bg-light border-bottom">
+			<div class="container">
+
+				<div id="boxItems" class="box-items">
+					<div class="box-item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet risus ultrices quam
+							convallis laoreet. Aliquam finibus nisi vel lobortis volutpat. Suspendisse quis condimentum lacus,
+							dapibus fermentum magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+							cubilia curae; Aliquam erat volutpat. Donec vel urna nibh. Nam in convallis eros. Quisque
+							tristique, leo eget rutrum dictum, ipsum nisl mattis sapien, malesuada gravida purus ligula eu
+							odio. Vestibulum ac lorem quam. Aliquam sed dolor ligula. </p>
+					</div>
+					<div class="box-item">
+						<p>Duis maximus ex non nisi molestie sollicitudin. Pellentesque odio lorem, euismod vitae urna nec,
+							gravida sagittis leo. Nullam cursus augue ut mauris mattis feugiat quis vitae massa. Donec tempus
+							faucibus diam. Duis iaculis eleifend facilisis. Duis eleifend viverra viverra. Etiam at gravida
+							tortor. Quisque vitae pharetra lorem, in lobortis erat. Ut eget leo fringilla, pretium diam eu,
+							placerat metus. Vivamus euismod dictum diam quis interdum. Pellentesque habitant morbi tristique
+							senectus et netus et malesuada fames ac turpis egestas. Curabitur rutrum ut lectus eu porttitor.
+							Sed finibus faucibus nunc. Quisque in risus facilisis, mollis felis non, luctus odio. Etiam erat
+							nulla, sodales sed lorem in, ultricies fringilla libero.</p>
+					</div>
+					<div class="box-item">
+						<p>Donec consectetur id purus ac tristique. Donec condimentum nisi at auctor sollicitudin.
+							Pellentesque lacinia ipsum ut quam eleifend gravida. Vestibulum congue sit amet lectus sed
+							fringilla. Etiam commodo tristique quam sit amet pretium. Suspendisse lectus libero, laoreet ut leo
+							et, aliquam ultricies libero. Curabitur sed tellus quis ex tempor aliquet in sed urna. Nunc
+							pellentesque accumsan accumsan. Proin vehicula sit amet turpis a pharetra. Donec efficitur nec enim
+							ut elementum. Morbi dignissim tempor eros, ut maximus massa. Nam mollis nibh quis blandit semper.
+							In hac habitasse platea dictumst. Nulla facilisi. Donec id sem vitae nibh auctor aliquet.</p>
+					</div>
+					<div class="box-item">
+						<p>Phasellus non vehicula leo, id eleifend ante. Curabitur vel dolor et orci commodo condimentum.
+							Morbi eu urna a nisi gravida tempor. Sed fermentum odio sed velit aliquam, non facilisis nulla
+							fringilla. Nullam ullamcorper, mi non malesuada tristique, dui neque tristique ante, hendrerit
+							consectetur lectus leo id nisl. Proin sed justo justo. Donec dapibus sapien eu ligula venenatis,
+							eget venenatis nisl gravida. Aliquam condimentum metus vitae aliquet iaculis. Curabitur aliquam, ex
+							in faucibus varius, velit sem dignissim lacus, efficitur pretium risus enim at magna. Suspendisse
+							et efficitur est. Sed gravida, nibh vel scelerisque mattis, nisi turpis euismod libero, in
+							pellentesque sapien neque a arcu. Fusce pretium felis eu diam varius, sit amet tempor purus
+							accumsan. Aenean rhoncus neque id pulvinar luctus.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- <script>
+		window.onload = function () {
+			equalizeHeight();
+		};
+
+		function equalizeHeight() {
+			var parent = document.getElementById('boxItems');
+			var children = parent.getElementsByClassName('box-item');
+			var maxHeight = 0;
+
+			for (var i = 0; i < children.length; i++) {
+				if (children[i].offsetHeight > maxHeight) {
+					maxHeight = children[i].offsetHeight;
+				}
+			}
+
+			for (var i = 0; i < children.length; i++) {
+				children[i].style.height = maxHeight + 'px';
+			}
+		}
+	</script> -->
+
+	<script>
+		window.onload = function () {
+			equalizeHeight();
+		};
+
+		window.addEventListener('resize', equalizeHeight);
+
+		function equalizeHeight() {
+			var parent = document.getElementById('boxItems');
+			var children = parent.getElementsByClassName('box-item');
+			var maxHeight = 0;
+
+			for (var i = 0; i < children.length; i++) {
+				children[i].style.height = 'auto'; // Reset height to auto to recalculate
+				if (children[i].offsetHeight > maxHeight) {
+					maxHeight = children[i].offsetHeight;
+				}
+			}
+
+			for (var i = 0; i < children.length; i++) {
+				children[i].style.height = maxHeight + 'px';
+			}
+		}
+	</script>
+
+
+
+<script>
+	// BLOCKQUOTE EQUAL HEIGHT CODE
+	window.onload = function () {
+		equalizeHeight();
+	};
+	window.addEventListener('resize', equalizeHeight);
+	function equalizeHeight() {
+		var parent = document.getElementById('blockquoteItems');
+		var children = parent.getElementsByClassName('blockquote-item');
+		var maxHeight = 0;
+		for (var i = 0; i < children.length; i++) {
+			children[i].style.height = 'auto';
+			if (children[i].offsetHeight > maxHeight) {
+				maxHeight = children[i].offsetHeight;
+			}
+		}
+		for (var i = 0; i < children.length; i++) {
+			children[i].style.height = maxHeight + 'px';
+		}
+	}
+</script>
+
+
+</body>
+
+</html>
