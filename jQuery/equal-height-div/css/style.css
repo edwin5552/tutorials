@@ -1,0 +1,24 @@
+.box-items {
+	border: 1px solid #000;
+}
+
+/* .box-items {} */
+
+.box-items::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+.box-item {
+	border: 1px solid #E5E5E5;
+	padding: 10px 15px;
+	width: 100%;
+	max-width: 25%;
+	float: left;
+}
+
+.box-item p {
+	margin-bottom: 0;
+}
