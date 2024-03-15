@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration | The Center</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="h3 text-center mb-5">Registration</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 col-lg-6 mx-auto">
+					<form action="connection.php" method="post">
+
+						<div class="mb-3">
+							<label class="form-label fw-semibold small" for="fullName">Full Name</label>
+							<input type="text" class="form-control" id="fullName" name="full_name">
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label fw-semibold small" for="email">Email Address</label>
+									<input type="email" class="form-control" id="email" name="email">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label fw-semibold small" for="phoneNumber">Phone Number</label>
+									<input type="text" class="form-control" id="phoneNumber" name="phone_no">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="mb-3">
+										<label class="form-label fw-semibold small" for="gender">Gender</label>
+										<select class="form-select" name="gender" id="gender">
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label fw-semibold small" for="dob">Date of birth</label>
+									<input type="date" class="form-control" id="dob" name="dob">
+								</div>
+							</div>
+						</div>
+
+						<div class="mb-3 pt-2">
+							<button class="btn btn-dark w-100" type="submit">Register</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
