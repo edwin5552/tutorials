@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Show/Hide Div with Data Attribute</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button class="toggleButton active" data-target="targetDiv1">Toggle Div 1</button>
+	<button class="toggleButton" data-target="targetDiv2">Toggle Div 2</button>
+	<button class="toggleButton" data-target="targetDiv3">Toggle Div 3</button>
+
+	<div id="targetDiv1" class="hidden">
+		This is div 1.
+	</div>
+	<div id="targetDiv2" class="hidden">
+		This is div 2.
+	</div>
+	<div id="targetDiv3" class="hidden">
+		This is div 3.
+	</div>
+
+
+
+	<script>
+		$(document).ready(function () {
+			// Show the first div by default
+			$('#targetDiv1').show();
+
+			// Function to toggle visibility of target div based on data attribute
+			$('.toggleButton').click(function () {
+				var target = $(this).data('target');
+				// Hide all divs except the target div
+				$('[id^="targetDiv"]').not('#' + target).hide();
+				// Show the target div
+				$('#' + target).show();
+				// Remove "active" class from all buttons
+				$('.toggleButton').removeClass('active');
+				// Add "active" class to the clicked button
+				$(this).addClass('active');
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$('#val1').show();
+			$('.toggle-btn').click(function () {
+				var target = $(this).data('target');
+				$('[id^="val"]').not('#' + target).hide();
+				$('#' + target).show();
+			});
+		});
+	</script>
+
+	<!-- ======================= -->
+
+	
+	<script>
+		$(document).ready(function () {
+			$('#soRender1').show();
+
+			$('.so-button').click(function () {
+				var target = $(this).data('target');
+				$('[id^="soRender"]').not('#' + target).hide();
+				$('#' + target).show();
+				$('.so-button').removeClass('is-active');
+				$(this).addClass('is-active');
+			});
+		});
+	</script>
+
+<!-- soRender1 -->
+
+</body>
+
+</html>
