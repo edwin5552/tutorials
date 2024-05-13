@@ -1,0 +1,13 @@
+.h-sm {
+	height: 150px;
+}
+.h-md {
+	height: 300px;
+}
+.h-lg {
+	height: 600px;
+}
+
+.card {
+	box-shadow: var(--bs-box-shadow-sm);
+}
