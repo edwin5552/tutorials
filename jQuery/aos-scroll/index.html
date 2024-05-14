@@ -16,7 +16,7 @@
 			<div class="container">
 				<div class="row g-4">
 
-					<div class="col-lg-4"><div class="card h-sm"></div></div>
+					<div class="col-lg-4"><div class="card h-sm" data-aos="fade-up"></div></div>
 					<div class="col-lg-4"><div class="card h-md"></div></div>
 					<div class="col-lg-4"><div class="card h-lg"></div></div>
 
@@ -24,9 +24,9 @@
 					<div class="col-lg-4"><div class="card h-lg"></div></div>
 					<div class="col-lg-4"><div class="card h-sm"></div></div>
 
-					<div class="col-lg-4"><div class="card h-sm"></div></div>
-					<div class="col-lg-4"><div class="card h-md"></div></div>
-					<div class="col-lg-4"><div class="card h-lg"></div></div>
+					<div class="col-lg-4"><div class="card h-sm" data-aos="fade-up"></div></div>
+					<div class="col-lg-4"><div class="card h-md" data-aos="fade-up"></div></div>
+					<div class="col-lg-4"><div class="card h-lg" data-aos="fade-up"></div></div>
 
 				</div>
 			</div>
@@ -39,7 +39,15 @@
 	<script src="js/aos.js"></script>
 	<script>
 		$(document).ready(function(){
-			AOS.init();
+			AOS.init({
+				// duration: 1200,
+				// once: true,
+				// easing: 'ease-out-quart',
+				// offset: 200,
+				duration: 1000,
+				easing: 'ease-in-sine',
+				delay: 300,
+			});
 		});
 	</script>
 </body>
