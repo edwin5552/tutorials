@@ -1,0 +1,66 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	padding: 100px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 991px;
+	margin: 0 auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+
+}
+
+li {
+	position: relative;
+	font-size: 20px;
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	color: #000000;
+	position: relative;
+}
+
+.link:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	display: block;
+	right: 0;
+	bottom: -5px;
+	background: #000000;
+	transition: width .2s ease;
+	-webkit-transition: width .2s ease;
+}
+
+.link:hover:after {
+	width: 100%;
+	left: 0;
+	background: #000000;
+}
+
