@@ -1,0 +1,15 @@
+.swiper-carousel {}
+
+.swiper-carousel .ratio {}
+
+.swiper-carousel .ratio video {
+	border-radius: 12px;
+}
+
+
+.swiper-carousel .swiper-pagination {
+	bottom: 50px;
+}
+
+.swiper-main-carousel { margin-bottom: 15px; }
+.swiper-thumb-carousel .swiper-slide { cursor: pointer; }
