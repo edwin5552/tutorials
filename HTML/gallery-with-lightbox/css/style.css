@@ -1,0 +1,119 @@
+/* ============================
+Theme Name: Theme Name
+Version: 1.0
+Description: Theme Description
+Author: Edwin
+First Update: 05/06/2024
+Last Update: 05/06/2024
+License: GNU General Public License v2 or later
+============================*/
+
+/* ============================
+# VARIABLES
+============================*/
+:root {
+	--font-body: "Roboto", sans-serif;
+	--font-heading: "Roboto", sans-serif;
+	--color: #000000;
+}
+
+/* ============================
+# RESET STYLES
+============================*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: var(--font-body);
+	font-size: 16px;
+	color: var(--color);
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+/* ============================
+# HEADER
+============================*/
+
+
+
+/* ============================
+# HOME PAGE
+============================*/
+/* =====[SECTION GALLERY GRID]===== */
+.section-gallery-grid {
+	padding: 100px 0 100px 0;
+}
+.gallery-block {
+	position: relative;
+	overflow: hidden;
+}
+.gallery-block a {
+	display: block;
+	position: relative;
+}
+.gallery-block.gallery-block-lg a { padding-top: 39.721%; }
+.gallery-block.gallery-block-md a { padding-top: 81.732%; }
+.gallery-block img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: all .60s ease-in-out;
+}
+.gallery-block .overlay {
+	background-color: rgba(0, 0, 0, 0.55);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-plus'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 56px;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0.4);
+	opacity: 0;
+	transition: all .30s ease-in-out;
+	z-index: 10;
+}
+.gallery-block:hover img {
+	transform: scale(1.2);
+}
+.gallery-block:hover .overlay {
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* ============================
+# FOOTER
+============================*/
+
+
+
+/* ============================
+# INNER PAGES
+============================*/
+
+
+
+/* ============================
+# MEDIA QUERIES
+============================*/
+@media (max-width: 1399px) {}
+@media (max-width: 1199px) {}
+@media (max-width: 991px) {}
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+@media (min-width: 1400px) {}
