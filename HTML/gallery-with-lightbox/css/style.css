@@ -45,9 +45,7 @@ a:focus {
 # HOME PAGE
 ============================*/
 /* =====[SECTION GALLERY GRID]===== */
-.section-gallery-grid {
-	padding: 100px 0 100px 0;
-}
+.section-gallery-grid { padding: 100px 0 100px 0; }
 .gallery-block {
 	position: relative;
 	overflow: hidden;
@@ -85,24 +83,53 @@ a:focus {
 	transition: all .30s ease-in-out;
 	z-index: 10;
 }
-.gallery-block:hover img {
-	transform: scale(1.2);
-}
+.gallery-block:hover img { transform: scale(1.2); }
 .gallery-block:hover .overlay {
 	transform: scale(1);
 	opacity: 1;
 }
 
-/* ============================
-# FOOTER
-============================*/
+/* =====[SECTION CUSTOM POINTER]===== */
+.section-custom-pointer { padding: 100px 0 100px 0; }
+.custom-pointer {
+	background: #C5C5C5;
+	height: 140px;
+	border-radius: 6px;
+	/* cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png'), auto; */
+	/* cursor: url('../img/black-cusor.png'), auto; */
+	cursor: url('../img/facebook.png'), auto;
+	/* cursor: crosshair; */
+}
 
 
+html,
+html *,
+body,
+body * {
+	cursor: none;
+}
 
-/* ============================
-# INNER PAGES
-============================*/
-
+.cursor-dot,
+.cursor-dot-outline {
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cursor-dot {
+	width: 8px;
+	height: 8px;
+	background-color: #37474F;
+}
+.cursor-dot-outline {
+	width: 40px;
+	height: 40px;
+	background-color: #90A4AE;
+}
 
 
 /* ============================
