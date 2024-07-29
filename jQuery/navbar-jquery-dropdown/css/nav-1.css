@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.site-header {
+	background: #455A64;
+}
+.site-header > .container {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	align-items: center;
+}
+
+.brand {
+	width: 42px;
+	flex: 0 0 auto;
+}
+.brand a {
+	display: block;
+	padding: 5px 5px;
+	background: #FFFFFF;
+	border-radius: 3px;
+}
+.brand a img {
+	display: block;
+	width: 100%;
+}
+
+.menubar {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+.menu .menu-item {
+	position: relative;
+}
+.menu > .menu-item {}
+.menu .menu-item a {
+	font-size: 16px;
+	display: block;
+	text-decoration: none;
+}
+.menu > .menu-item > a {
+	font-weight: 700;
+	color: #B0BEC5;
+	text-transform: uppercase;
+	padding: 30px 20px;
+}
+.menu > .menu-item > a:hover {
+	color: #ECEFF1;
+	background: #263238;
+}
+.menu .menu-item .sub-menu {
+	display: none;
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #CFD8DC;
+	width: 200px;
+	z-index: 100;
+}
+.menu > .menu-item.menu-item-has-children > .sub-menu.active {
+	display: block;
+}
+.menu .menu-item .sub-menu .menu-item a {
+	color: #455A64;
+	padding: 10px 20px;
+}
+.menu .menu-item .sub-menu .menu-item:hover a {
+	color: #ECEFF1;
+	background: #37474F;
+}
