@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Bootstrap Templates">
+      <meta name="author" content="Edwin and Bootstrap contributors">
+      <title>Tutorial Templates</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+
+         html,
+         body {
+            /*background: #000;*/
+         }
+
+         body {
+            /*font-family: 'Inter', sans-serif;*/
+            /*letter-spacing: -1px;*/
+            /*text-align: center;*/
+            /*font-size: 20px;*/
+            height: 100vh;
+            /*color: #fff;*/
+            /*margin: 0;*/
+         }
+
+         .hero {
+            background: url('./img/carousel-3.jpg') no-repeat center center;
+            justify-content: center;
+            background-size: cover;
+            flex-direction: column;
+            /*border-radius: 10px;*/
+            align-items: center;
+            position: fixed;
+            display: flex;
+            height: 100vh;
+            width: 100%;
+         }
+         .down {
+            text-align: center;
+            position: absolute;
+            opacity: 0.6;
+            height: 40px;
+            width: 100%;
+            bottom: 0;
+         }
+         .content {
+            box-shadow: 0 0 100px rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 40px;
+            position: relative;
+            background: #FFF;
+            height: 2000px;
+            display: flex;
+            top: 100vh;
+         }
+      </style>
+   </head>
+   <body>
+
+      <div class="site-frame">
+
+         <div class="hero">
+            <h1>Get scrollin'</h1>
+            <div class="down">
+               <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+            </div>
+         </div>
+         <div class="content">💙</div>
+
+      </div>
+
+      <!-- Script Files -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+         $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            $(".hero").css({
+               transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
+            });
+         });
+      </script>
+   </body>
+</html>
