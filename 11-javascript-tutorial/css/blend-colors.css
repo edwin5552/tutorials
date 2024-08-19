@@ -1,0 +1,14 @@
+.card {
+	border: 0;
+	height: 40vh;
+	border-radius: 0;
+}
+
+.sticky-txt {
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	z-index: 100;
+
+	mix-blend-mode: difference;
+}
