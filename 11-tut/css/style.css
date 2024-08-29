@@ -1,0 +1,82 @@
+/* ============================
+Project Name: Project 1
+Version: 1.0.7
+Author: Edwin
+First Update: 08/05/2020
+Last Update: 08/05/2020
+License: GNU General Public License v2 or later
+============================*/
+
+/* ============================
+Variables
+============================*/
+:root {}
+
+/* ============================
+Reset style
+============================*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-size: 16px;
+	font-weight: 400;
+	color: #383838;
+}
+button,
+a { display: inline-block; }
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+button,
+button:hover,
+button:focus {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+p { font-weight: 400; }
+img { max-width: 100%; }
+
+/* ============================
+Bootstrap / User Reset
+============================*/
+.btn:focus,
+button:focus { box-shadow: none; }
+.form-control { height: auto; }
+.form-control:focus { box-shadow: none; }
+.ul-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ============================
+# Header
+============================*/
+
+
+
+/* ============================
+# Main style
+============================*/
+
+
+
+/* ============================
+# Footer
+============================*/
+
+
+
+/* ============================
+# Inner pages
+============================*/
+
+
+
+/* ============================
+# Media Queries
+============================*/
