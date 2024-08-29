@@ -1,67 +1,10 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+/*!
+ * SCSS Templates v3.0 (https://encome.in/scss_temp)
+ * Copyright 2019 Encome Authors
+ * Copyright 2019 Edwin
+ * Licensed under MIT
+ */
 
-body {
-	margin: 0;
-	padding: 0;
-}
+@import "lib/index";
 
-
-
-.container {
-	width: 100%;
-	max-width: 80%;
-	padding: 0 16px;
-	margin: 0 auto;
-}
-.col-6 {
-	width: 50%;
-	padding: 40px 0;
-}
-.card {
-	$card-padding-x: 16px;
-	$card-padding-y: 12px;
-	$card-light-bg: #E5E5E5;
-	$card-light-color: #282828;
-	$card-dark-bg: #383838;
-	$card-dark-color: #F5F5F5;
-
-	border: 1px solid transparent;
-	border-radius: 6px;
-	.card-header {
-		background: transparent;
-		padding: $card-padding-y $card-padding-x;
-	}
-	.card-body {
-		padding: $card-padding-y $card-padding-x;
-	}
-	.card-footer {
-		border-top: 1px solid transparent;
-		padding: $card-padding-y $card-padding-x;
-	}
-	&.card-light {
-		color: $card-light-color;
-		border-color: $card-light-bg;
-		.card-header {
-			background: $card-light-bg;
-		}
-		.card-body {}
-		.card-footer {
-			border-top-color: $card-light-bg;
-		}
-	}
-	&.card-dark {
-		border-color: $card-dark-bg;
-		color: $card-dark-color;
-		.card-header {
-			background: $card-dark-bg;
-		}
-		.card-body {}
-		.card-footer {
-			border-top-color: $card-dark-bg;
-		}
-	}
-}
+@import "base/index";
