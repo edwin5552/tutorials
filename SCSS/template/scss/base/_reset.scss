@@ -1,0 +1,97 @@
+// ================================
+// RESET
+// ================================
+body {
+	font-family: $font-body;
+	font-size: $font-size;
+	font-weight: $font-regular;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+
+a,
+b,
+span,
+button,
+strong {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	&:hover, 
+	&:focus, 
+	&:active {
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	&:hover, 
+	&:focus, 
+	&:active {
+		outline: none;
+	}
+}
+
+b,
+strong {
+	font-weight: $font-bold;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	font-weight: $font-bold;
+	color: $primary-color;
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
+
+h1 { font-size: 1.875rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.125rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.875rem; }
+h6 { font-size: 0.75rem; }
+
+// ----------------------------------
+// Reset Class
+// ----------------------------------
+.ul-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// ----------------------------------
+// Helper Class
+// ----------------------------------
+.font-size-18 { font-size: 1.125rem; }
+.font-size-16 { font-size: 1rem; }
+.font-size-14 { font-size: 0.875rem; }
+.font-size-12 { font-size: 0.75rem; }
