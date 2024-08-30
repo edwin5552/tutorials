@@ -1,0 +1,12 @@
+// --------------------------------------------------
+// User Select SASS mixins
+// --------------------------------------------------
+
+// User Select
+// auto | none | text | all
+@mixin user-select ($user-select: none) {
+	-webkit-user-select: $user-select;
+	   -moz-user-select: $user-select;
+	    -ms-user-select: $user-select;
+	        user-select: $user-select;
+}
