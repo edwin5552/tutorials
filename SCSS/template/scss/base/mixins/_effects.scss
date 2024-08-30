@@ -1,0 +1,16 @@
+// --------------------------------------------------
+// Custom Transition Effects Mixins
+// Author : Edwin
+// --------------------------------------------------
+
+//Cubic Bezier Effect One
+@mixin cubic-effect-one {
+   -webkit-transition: all .40s cubic-bezier(.79,.14,.15,.86);
+           transition: all .40s cubic-bezier(.79,.14,.15,.86);
+}
+
+//Cubic Bezier Effect Two
+@mixin cubic-effect-two {
+   -webkit-transition: all 0.4s cubic-bezier(.77,0,.18,1);
+           transition: all 0.4s cubic-bezier(.77,0,.18,1);
+}

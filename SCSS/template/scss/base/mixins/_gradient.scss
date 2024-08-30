@@ -1,0 +1,25 @@
+// ----------------------------------
+// Linear Gradient Left to Right
+// ----------------------------------
+@mixin linear-gradient-lr($left, $right){
+    background: $left;
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%);
+    background: -webkit-gradient(linear, left, right, color-stop(0%,$left), color-stop(100%,$right));
+    background: -webkit-linear-gradient(left,  $left 0%,$right 100%);
+    background: -ms-linear-gradient(left,  $left 0%,$right 100%);
+    background: linear-gradient(to right,  $left 0%,$right 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+
+// ----------------------------------
+// Linear Gradient bottom to Top
+// ----------------------------------
+@mixin linear-gradient-bt($bottom, $top){
+    background: $bottom;
+    background: -moz-linear-gradient(bottom,  $bottom 0%, $top 100%);
+    background: -webkit-gradient(linear, bottom, top, color-stop(0%,$bottom), color-stop(100%,$top));
+    background: -webkit-linear-gradient(bottom,  $bottom 0%,$top 100%);
+    background: -ms-linear-gradient(bottom,  $bottom 0%,$top 100%);
+    background: linear-gradient(to top,  $bottom 0%,$top 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
