@@ -1,0 +1,19 @@
+body { font-family: 'IBM Plex Sans', sans-serif; }
+.gallery-card { border: 10px solid var(--bs-primary); }
+.gallery-card .content {
+	height: 40px;
+	padding: 30px;
+	transition: all 0.9s ease-in-out;
+}
+.gallery-card .content h4 {
+	font-size: 22px;
+	margin: -10px 0 16px 0;
+}
+.gallery-card .content p { 
+	font-size: 18px; 
+	opacity: 0;
+	transition: all 0.9s ease-in-out;
+}
+.gallery-card:hover .content, 
+.gallery-card .content:hover { height: 100%; }
+.gallery-card:hover .content p {  opacity: 1; }
