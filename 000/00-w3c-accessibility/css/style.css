@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000000;
+	margin: 0;
+}
+
+.site-header {
+	padding: 14px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+	width: 100%;
+	max-width: 930px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.brand {
+	display: inline-block;
+	margin-right: 20px;
+}
+.brand img {
+	width: 80px;
+	display: inline-block;
+}
+
+.nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.navbar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.navbar li {}
+.navbar li + li {
+	margin-left: 40px;
+}
+.navbar li a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 4px;
+}
+.navbar li:hover a {
+	color: #055E9E;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 930px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section-hero {
+	text-align: center;
+	padding: 70px 0 70px 0;
+}
+.section-hero h1 {
+	font-size: 46px;
+	font-weight: 400;
+	margin: 0 auto 16px auto;
+	letter-spacing: 1px;
+}
+.section-hero p {
+	font-size: 24px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+}

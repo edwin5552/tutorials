@@ -1,0 +1,61 @@
+
+:root {
+	--body-font: "Plus Jakarta Sans", sans-serif;
+	--heading-font: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+	font-family: var(--body-font);
+	font-size: 14px;
+	letter-spacing: 0.3px;
+}
+
+
+
+
+.site-header {
+	border-bottom: 1px solid #000;
+}
+.site-header > .container {}
+
+
+.brand {
+	display: block;
+	line-height: 0.8;
+}
+.brand a {
+	font-size: 38px;
+	font-weight: 800;
+	color: #000;
+	letter-spacing: -3px;
+	/* text-transform: uppercase; */
+	text-decoration: none;
+}
+
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.menu .menu-item {
+	position: relative;
+}
+.menu > .menu-item {
+	position: relative;
+	margin-right: 40px;
+}
+.menu > .menu-item > a {
+	font-size: 14px;
+	font-weight: 700;
+	padding: 14px 0;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.menu .menu-item .submenu {
+	position: absolute;
+} 

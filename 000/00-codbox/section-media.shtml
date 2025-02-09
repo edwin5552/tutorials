@@ -1,0 +1,9 @@
+<section class="section py-5 border-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mx-auto">
+				<img src="img/media-1.jpg" alt="media" class="rounded w-100">
+			</div>
+		</div>
+	</div>
+</section>
